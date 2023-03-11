@@ -23,7 +23,7 @@ tensorflow：2.9.1<br /><br />
 &emsp;---jpg1<br />
 &emsp;---png2<br />
 &emsp;---bmp3<br />
-&emsp;----...<br />
+&emsp;--- ...<br />
 ---类别2文件夹<br />
 ---类别3文件夹<br />
----...
+--- ...
