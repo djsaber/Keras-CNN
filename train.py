@@ -14,6 +14,7 @@ if data_choose == "1" : output_dim = 2
 if data_choose == "2" : output_dim = 5
 batch_size = 32           
 epochs = 20
+seed=1
 #-----------------------------------------------------------------------------
 
 
@@ -50,13 +51,15 @@ train_generator = train_datagen.flow_from_directory(
         train_path,
         target_size=(input_shape[0], input_shape[1]),
         batch_size=batch_size,
-        class_mode='categorical')
+        class_mode='categorical',
+        seed=seed)
 
 validation_generator = test_datagen.flow_from_directory(
         valid_path,
         target_size=(input_shape[0], input_shape[1]),
         batch_size=batch_size,
-        class_mode='categorical')
+        class_mode='categorical',
+        seed=seed)
 #-----------------------------------------------------------------------------
 
 

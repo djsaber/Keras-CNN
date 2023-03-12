@@ -16,7 +16,8 @@ if data_choose == "1":
     batch_size = 50   
 if data_choose == "2":
     output_dim = 5
-    batch_size = 5           
+    batch_size = 5
+seed=1
 #-----------------------------------------------------------------------------
 
 
@@ -40,7 +41,8 @@ test_generator = test_datagen.flow_from_directory(
     test_path,
     target_size=(input_shape[0], input_shape[1]),
     batch_size=batch_size,
-    class_mode='categorical')
+    class_mode='categorical',
+    seed=seed)
 #-----------------------------------------------------------------------------
 
 
